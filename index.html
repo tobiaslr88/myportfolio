@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Your Minimal Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Your Name</h1>
+    <p>Minimal portfolio for job seeking. Welcome!</p>
+    <img src="assets/profile.jpg" alt="Your profile picture" class="profile-pic">
+  </header>
+  <main>
+    <div class="portfolio-grid">
+      <img src="assets/project1.jpg" alt="CV" class="grid-item" data-modal="modal1">
+      <img src="assets/project2.jpg" alt="HTML Game" class="grid-item" data-modal="modal2">
+      <img src="assets/project3.jpg" alt="MP3 Project" class="grid-item" data-modal="modal3">
+      <img src="assets/project4.jpg" alt="Portfolio PDF" class="grid-item" data-modal="modal4">
+    </div>
+  </main>
+  <!-- Modals -->
+  <div class="modal" id="modal1">
+    <div class="modal-content">
+      <span class="close" data-close="modal1">&times;</span>
+      <iframe src="assets/cv.pdf" width="100%" height="500px"></iframe>
+    </div>
+  </div>
+  <div class="modal" id="modal2">
+    <div class="modal-content">
+      <span class="close" data-close="modal2">&times;</span>
+      <iframe src="assets/game.html" width="100%" height="500px"></iframe>
+    </div>
+  </div>
+  <div class="modal" id="modal3">
+    <div class="modal-content">
+      <span class="close" data-close="modal3">&times;</span>
+      <audio controls>
+        <source src="assets/project-audio.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  </div>
+  <div class="modal" id="modal4">
+    <div class="modal-content">
+      <span class="close" data-close="modal4">&times;</span>
+      <iframe src="assets/portfolio.pdf" width="100%" height="500px"></iframe>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
