@@ -16,6 +16,11 @@ body {
   letter-spacing: 0.01em;
 }
 
+.intro div:last-child {
+  color: #666;
+  font-size: 1.08rem;
+  margin-top: 0.9em;
+}
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
