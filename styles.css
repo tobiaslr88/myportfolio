@@ -72,7 +72,29 @@ body {
   justify-content: center;
   margin: auto;
 }
+#modal3 .modal-content {
+  background-image: url('assets/header-lisbon-disaster.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* Optional: add overlay for better contrast */
+  position: relative;
+}
 
+#modal3 .modal-content::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.7); /* Adjust opacity/color as you like */
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Make sure modal content stays above overlay */
+#modal3 .modal-content > * {
+  position: relative;
+  z-index: 1;
+}
 .close {
   position: absolute;
   right: 1rem;
