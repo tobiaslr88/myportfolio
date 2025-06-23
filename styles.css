@@ -53,7 +53,9 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+.modal.active {
+  display: flex;
+}
 .modal-content {
   background: #fff;
   padding: 2rem;
