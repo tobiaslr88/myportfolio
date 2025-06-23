@@ -5,9 +5,15 @@ body {
   color: #212121;
 }
 
-header {
+.intro {
+  max-width: 650px;
+  margin: 3rem auto 2.5rem auto;
+  font-size: 1.35rem;
+  font-weight: 400;
+  color: #333;
+  line-height: 1.5;
   text-align: center;
-  margin: 2rem 0 3rem;
+  letter-spacing: 0.01em;
 }
 
 .grid {
