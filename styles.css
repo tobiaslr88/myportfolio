@@ -85,7 +85,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(255,255,255,0.7); /* Adjust opacity/color as you like */
+  background: rgba(255,255,255,0.3); /* Adjust opacity/color as you like */
   z-index: 0;
   pointer-events: none;
 }
