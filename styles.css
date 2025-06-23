@@ -74,3 +74,11 @@ header {
     grid-template-rows: repeat(4, 1fr);
   }
 }
+footer {
+  text-align: center;
+  padding: 2rem 0 1rem 0;
+  color: #888;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  background: none;
+}
