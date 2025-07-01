@@ -102,7 +102,9 @@ body {
 #modal3 .modal-content p {
   color: white;
 }
-
+.modal-content {
+  font-family: 'Inter', Arial, sans-serif;
+}
 /* Make sure modal content stays above overlay */
 #modal3 .modal-content > * {
   position: relative;
