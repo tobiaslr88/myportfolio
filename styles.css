@@ -90,6 +90,11 @@ body {
   pointer-events: none;
 }
 
+/* Center text in modal paragraphs */
+.modal-content p {
+  text-align: center;
+}
+
 /* Make sure modal content stays above overlay */
 #modal3 .modal-content > * {
   position: relative;
