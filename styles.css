@@ -95,6 +95,10 @@ body {
   text-align: center;
 }
 
+.modal-content p {
+  margin-bottom: 2em; /* Adjust value as needed */
+}
+
 /* Make sure modal content stays above overlay */
 #modal3 .modal-content > * {
   position: relative;
