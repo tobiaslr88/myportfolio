@@ -72,6 +72,30 @@ body {
   justify-content: center;
   margin: auto;
 }
+#modal1 .modal-content,
+#modal2 .modal-content,
+#modal4 .modal-content {
+  background: #000;
+  color: #fff;
+}
+
+#modal1 .modal-content p,
+#modal2 .modal-content p,
+#modal4 .modal-content p {
+  color: #fff;
+}
+
+/* Optional: Make sure close button is visible */
+#modal1 .close,
+#modal2 .close,
+#modal4 .close {
+  color: #fff;
+}
+#modal1 .close:hover,
+#modal2 .close:hover,
+#modal4 .close:hover {
+  color: #ccc;
+}
 .modal-content > p {
   max-width: 800px;    /* Adjust as needed */
   margin-left: auto;
