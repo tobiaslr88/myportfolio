@@ -79,6 +79,15 @@ body {
   width: 100%;
   text-align: center;   /* Optional: keeps the current centering */
 }
+.modal-content > p {
+  font-family: 'Georgia', serif;      /* Or any font you like */
+  font-size: 1.4rem;                  /* Adjust as needed for subheader feel */
+  font-weight: 600;                   /* Makes it bolder */
+  letter-spacing: 0.01em;             /* Optional: slight spacing for clarity */
+  color: #333;                        /* Optional: adjust color */
+  margin-bottom: 1.5em;               /* Space below paragraph */
+  text-align: center;                 /* Keep centered if desired */
+}
 #modal3 .modal-content {
   background-image: url('assets/header-lisbon-disaster.jpg');
   background-size: cover;
