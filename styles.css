@@ -73,7 +73,7 @@ body {
   margin: auto;
 }
 .modal-content > p {
-  max-width: 600px;    /* Adjust as needed */
+  max-width: 800px;    /* Adjust as needed */
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -81,7 +81,7 @@ body {
 }
 .modal-content > p {
   font-family: 'Courier New', serif;      /* Or any font you like */
-  font-size: 2rem;                  /* Adjust as needed for subheader feel */
+  font-size: 1,6rem;                  /* Adjust as needed for subheader feel */
   font-weight: 600;                   /* Makes it bolder */
   letter-spacing: 0.01em;             /* Optional: slight spacing for clarity */
   color: #333;                        /* Optional: adjust color */
