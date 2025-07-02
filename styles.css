@@ -112,76 +112,83 @@ body {
   margin-bottom: 1.5em;               /* Space below paragraph */
   text-align: center;                 /* Keep centered if desired */
 }
+/* Modal Content: Black background */
 #modal3 .modal-content {
+  background: #000;
+  color: #fff;
+  position: relative;
+  padding: 2rem 1rem;
+  border-radius: 16px;
+  max-width: 1000px;
+  width: 90vw;
+  min-height: 60vh;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Intro paragraph: Black background, white text, distinct from rest */
+#modal3 .modal3-intro {
+  background: #000;
+  color: #fff;
+  padding: 1.5em 2em;
+  margin-bottom: 2em;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  z-index: 2;
+  position: relative;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.3);
+}
+
+/* Wrapper for image and audio player */
+#modal3 .modal3-bg-wrapper {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Background Image Block */
+#modal3 .modal3-bg {
+  width: 100%;
+  height: 300px; /* adjust as needed */
   background-image: url('assets/header-lisbon-disaster.jpg');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  /* Optional: add overlay for better contrast */
-  position: relative;
-}
-#modal3 .modal-content {
-  background: #000 !important;
-  color: #fff;
-  position: relative;
-}
-
-/* Remove or set background image logic if present */
-#modal3 .modal-content {
-  background-image: none !important;
-}
-
-/* Style the paragraph */
-#modal3 .modal-content p {
-  color: #fff;
-  z-index: 2;
-  position: relative;
-  max-width: 400px;
-  margin: 2em auto 1.5em auto;
-  font-size: 1.2rem;
-  text-align: center;
-}
-
-/* Optional: style the audio player */
-#modal3 audio {
-  margin-top: 1em;
-  width: 100%;
-  background: #111;
-}
-
-/* Make sure close button is white */
-#modal3 .close {
-  color: #fff;
-}
-#modal3 .close:hover {
-  color: #ccc;
-}
-#modal3 .modal-content::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(255,255,255,0.3); /* Adjust opacity/color as you like */
-  z-index: 0;
-  pointer-events: none;
-}
-
-/* Center text in modal paragraphs */
-.modal-content p {
-  text-align: center;
-}
-
-.modal-content p {
-  margin-bottom: 2em; /* Adjust value as needed */
-}
-
-#modal3 .modal-content p {
-  color: black;
-}
-
-/* Make sure modal content stays above overlay */
-#modal3 .modal-content > * {
-  position: relative;
+  border-radius: 12px;
+  margin-bottom: -60px; /* pull audio up over image */
   z-index: 1;
+  position: relative;
+}
+
+/* Audio player over background image */
+#modal3 .modal3-bg-wrapper audio {
+  width: 80%;
+  max-width: 500px;
+  position: relative;
+  z-index: 2;
+  margin-top: -40px; /* overlap image */
+  background: rgba(0,0,0,0.7); /* optional: dark background for contrast */
+  border-radius: 8px;
+  padding: 0.5em 0;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  #modal3 .modal3-intro {
+    padding: 1em;
+    max-width: 100%;
+  }
+  #modal3 .modal3-bg {
+    height: 180px;
+  }
+  #modal3 .modal3-bg-wrapper audio {
+    width: 98%;
+  }
 }
 .close {
   position: absolute;
