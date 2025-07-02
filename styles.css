@@ -120,7 +120,42 @@ body {
   /* Optional: add overlay for better contrast */
   position: relative;
 }
+#modal3 .modal-content {
+  background: #000 !important;
+  color: #fff;
+  position: relative;
+}
 
+/* Remove or set background image logic if present */
+#modal3 .modal-content {
+  background-image: none !important;
+}
+
+/* Style the paragraph */
+#modal3 .modal-content p {
+  color: #fff;
+  z-index: 2;
+  position: relative;
+  max-width: 400px;
+  margin: 2em auto 1.5em auto;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+/* Optional: style the audio player */
+#modal3 audio {
+  margin-top: 1em;
+  width: 100%;
+  background: #111;
+}
+
+/* Make sure close button is white */
+#modal3 .close {
+  color: #fff;
+}
+#modal3 .close:hover {
+  color: #ccc;
+}
 #modal3 .modal-content::before {
   content: "";
   position: absolute;
