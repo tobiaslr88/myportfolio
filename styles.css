@@ -218,3 +218,23 @@ footer {
   letter-spacing: 0.05em;
   background: none;
 }
+.linkedin-btn {
+  display: inline-block;
+  margin-top: 0.5em;
+  padding: 6px 12px 6px 8px;
+  background-color: #0077b5;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+.linkedin-btn img {
+  margin-right: 6px;
+  vertical-align: middle;
+  filter: brightness(0) invert(1);
+}
+.linkedin-btn:hover {
+  background-color: #005983;
+}
